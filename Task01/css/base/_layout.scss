@@ -1,0 +1,48 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+
+body {font-family: $base-font-family;
+    background-color: $main-bg-color;
+    color: $base-font-color;
+    margin: 0 auto;
+  }
+  
+  .main-nav { 
+    @include nav(center, 6*$base-size, $nav-bg-color, 3.75*$base-size, $nav-padding);
+    li {
+        @include inline(inline-block, $nav-li-padding);
+        font-weight: 4*$base-font-weight;
+        font-size: 1.2*$base-font-size;
+        margin: $base-margin;
+      } 
+  }
+  
+
+  a { color: $nav-font-color; text-decoration: $default-text-decor;
+        &:hover{text-decoration: $base-text-decor}
+  }
+  
+  .half-column {
+    @include inline(inline-block, $half-column-padding);
+    width: $base-width - 10;
+  }
+  
+.landing-copy {margin-left: 7*$base-margin;
+    p {font-size: 1.3*$base-font-size; line-height: 1.4*$base-size;}
+    h1 {font-size: 3*$base-font-size; line-height: 1.2*$base-size;}
+}
+
+  .cta-button {
+    @include border($base-border-size, $base-border-color, $base-border-style, $base-border-radois);
+    @include btn($btn-bg-color, $base-font-color, 7*$base-font-weight, $base-padding 4*$base-padding);
+    &:hover{
+        background-color: $btn-bg-color-hover;
+        text-decoration: $default-text-decor;
+    }
+  }
+  
+  .right {
+    float: $base-float-direction;
+  }
+  

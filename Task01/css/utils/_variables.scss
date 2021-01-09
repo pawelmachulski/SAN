@@ -1,0 +1,30 @@
+$main-bg-color: #73b7e1;
+$nav-bg-color: rgba(256,256,256,0.5);
+$btn-bg-color:  #d469a5;
+$btn-bg-color-hover: 0.9 * $btn-bg-color; // #fa75ad;
+$nav-font-color: #472063;
+
+$default-text-decor: none;
+$base-text-decor: underline;
+
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-color: white;
+$base-font-weight: 100;
+$base-font-size: 1em;
+
+$base-padding: 5px;
+$base-margin: 10px;
+$base-width: 50%;
+
+$half-column-padding: $base-padding*10 $base-padding*0 $base-padding*2 $base-padding*4;
+$nav-li-padding: $base-padding $base-padding*6;
+$nav-padding: 0px 4*$base-padding;
+
+$base-size: 1em;
+
+$base-border-style: solid;
+$base-border-color: white;
+$base-border-size: 2px;
+$base-border-radois: 50px;
+
+$base-float-direction: right;

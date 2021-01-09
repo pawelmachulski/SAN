@@ -1,0 +1,24 @@
+@mixin inline($display, $padding){
+    display: $display;
+    padding: $padding;
+}
+
+@mixin nav($textalign, $margintop, $bgcolor, $height, $padding){
+    text-align: $textalign;
+    margin-top: $margintop;
+    background-color: $bgcolor;
+    height: $height;
+    padding: $padding;
+}
+
+@mixin border($size, $color, $style, $radius){
+    border: $size $style $color;
+    border-radius: $radius;
+}
+
+@mixin btn($bgcolor, $fontcolor, $fontweight, $padding){
+    background-color: $bgcolor;
+    color: $fontcolor;
+    font-weight: $fontweight;
+    padding: $padding;
+}
