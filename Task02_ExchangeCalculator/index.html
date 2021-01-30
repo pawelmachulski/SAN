@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mainDiv">
+            <h1 class="centered">Kalulator walut</h1>
+            <form action="" class="inputValue">
+                <input type="number" name="inputValue" id="inputValue" placeholder="0">
+                <select id="ccys" name="ccys">
+                    <option value="Euro">Euro</option>
+                    <option value="Dolar">Dolar</option>
+                    <option value="Frank">Frank</option>
+                </select><br>
+            </form>
+            <div class="rate">
+                <b id="rate"></b>
+            </div>
+            <div class="result centered">
+                <b>Po przeliczeniu: </b>
+                <b id="resultValue"></b><br>
+            </div>
+            <div id="btn">
+                <button id="button" class="btn btn--large btn--green centered">Oblicz</button>
+            </div>
+        </div>
+    </div>
+    <ul id="ccy"></ul>
+    <!-- <script src="js/index.js"></script> -->
+    <!-- <script src="js/fetch.js"></script> -->
+    <script src="js/finaltask.js"></script>
+</body>
+</html>
